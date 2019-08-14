@@ -4,6 +4,7 @@ import { Alert, PageSection } from '@patternfly/react-core';
 import { DynamicImport } from '@app/DynamicImport';
 import { accessibleRouteChangeHandler } from '@app/utils/utils';
 import { Dashboard } from '@app/Dashboard/Dashboard';
+import { SimpleTextInput } from '@app/Examples/TextInput';
 import { NotFound } from '@app/NotFound/NotFound';
 import DocumentTitle from 'react-document-title';
 import { LastLocationProvider, useLastLocation } from 'react-router-last-location';
@@ -85,6 +86,14 @@ const routes: IAppRoute[] = [
     label: 'Support',
     path: '/support',
     title: 'Support Page Title'
+  },
+  {
+    component: SimpleTextInput,
+    exact: true,
+    icon: null,
+    label: 'Examples',
+    path: '/examples',
+    title: 'Examples'
   }
 ];
 
